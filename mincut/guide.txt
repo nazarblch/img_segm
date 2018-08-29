@@ -1,0 +1,5 @@
+javac mincut/MincutJNI.java
+javah -jni mincut.MincutJNI
+g++ "-I/System/Library/Frameworks/JavaVM.framework/Versions/A/Headers"  -c mincut_MincutJNI.cpp
+g++ -dynamiclib -o ../libmincut_dll.jnilib mincut_MincutJNI.o
+-Djava.library.path=/Users/nazar/gcd/oslom/src

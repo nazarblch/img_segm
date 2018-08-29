@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="mincut:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/mincut_jar</output-path>
+    <root id="archive" name="mincut.jar">
+      <element id="module-output" name="mincut" />
+    </root>
+  </artifact>
+</component>

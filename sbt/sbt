@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+
+export L_HOME=$(cd "$(dirname $0)/.." 2>&1 >/dev/null ; pwd)
+export L_TESTING=1  # To put test classes on classpath
+
+java -Xmx1200m -XX:MaxPermSize=350m -XX:ReservedCodeCacheSize=256m $SBT_OPTS -jar "$L_HOME"/sbt/sbt-launch.jar "$@"
